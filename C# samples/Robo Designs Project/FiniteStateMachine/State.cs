@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 namespace Assets.Script.Libraries.FiniteStateMachine
 {
-    #region State Class 
     public class State<TState, TTrigger>
         where TState : IComparable, IFormattable, IConvertible
         where TTrigger : IComparable, IFormattable, IConvertible

@@ -4,11 +4,6 @@ using System.IO;
 
 namespace Assets.Script.Libraries.FiniteStateMachine
 {
-
-    #region State Class 
-
-    #endregion
-
     public class FiniteStateMachine<TState, TTrigger>
         where TState : IComparable, IFormattable, IConvertible
         where TTrigger : IComparable, IFormattable, IConvertible
@@ -43,7 +38,7 @@ namespace Assets.Script.Libraries.FiniteStateMachine
 
         // TODO: could probably optimize by asking the state directly if its been entered
         // but this seems pretty painless to do instead
-        // hacky in any case, ideally fixed but not mandatory I'd say
+        // hacky in any case, ideally fixed but not urgent
         private bool _enteredNewStateThisFrame = false;
 
 
